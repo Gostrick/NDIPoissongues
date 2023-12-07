@@ -2,13 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" contesnt="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'écologie c'est cool !</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Trouvez des idées reçues sur l'écologie les boys !</h1>
-    <ul>
-        <li>On ne peut plus rien faire à notre échelle.</li>
-    </ul>
+    <header>
+        <h1>L'écologie c'est cool !</h1>
+        <p>Explorez des idées reçues sur l'écologie et découvrez comment chacun peut contribuer à un avenir plus durable.</p>
+    </header>
+
+    <nav>
+        <button onclick="showTab('climate-change')">Changement climatique</button>
+        <button onclick="showTab('renewable-energy')">Énergies renouvelables</button>
+        <button onclick="showTab('biodiversity')">Biodiversité</button>
+        <!-- Add buttons for other sections -->
+    </nav>
+
+    <section id="climate-change">
+        <h2>Changement climatique</h2>
+        <p>Découvrez les causes du changement climatique, ses effets sur notre planète et les solutions possibles pour atténuer son impact.</p>
+    </section>
+
+    <section id="renewable-energy">
+        <h2>Énergies renouvelables</h2>
+        <p>Apprenez l'importance de passer aux énergies renouvelables telles que le solaire, l'éolien, et comment ces sources peuvent contribuer à un avenir énergétique durable.</p>
+    </section>
+
+    <section id="biodiversity">
+        <h2>Biodiversité</h2>
+        <p>Découvrez pourquoi la conservation de la biodiversité est essentielle, comment préserver les espèces menacées et maintenir l'équilibre dans la nature.</p>
+    </section>
+
+    <!-- Add more sections for other topics -->
+
+    <footer>
+        <p>Restez informé et impliqué pour construire un avenir plus vert !</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
