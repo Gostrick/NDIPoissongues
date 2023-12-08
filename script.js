@@ -131,8 +131,31 @@ function goToCauchemar() {
     window.location.href = 'cauchemar.html'
 }
 
-function goToClean(){
-    window.location.href = 'EMY OU CALISTE METTEZ UN TRUC LA'
+function goToReves(){
+    window.location.href = 'reves.html'
+}
+
+function goToTemplate(){
+    window.location.href = 'template.html'
+}
+
+function goToRandomPage() {
+    const randomIndex = Math.floor(Math.random() * 3);
+
+    switch (randomIndex) {
+        case 0:
+            goToCauchemar();
+            break;
+        case 1:
+            goToReves();
+            break;
+        case 2:
+            goToTemplate();
+            break;
+        default:
+            console.error('Invalid random index.');
+            break;
+    }
 }
 // Set an interval to change the font style every second
 setInterval(applyRandomFontStyle, 75);
